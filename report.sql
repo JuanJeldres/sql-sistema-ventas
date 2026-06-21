@@ -112,4 +112,7 @@ group by ventas.id_cliente
 having sum(detalle_venta.cantidad) > 2;
 
 -- 26. Consulta trampa que no devuelva resultados
+select * from productos 
+where precio = 0;
 -- Explicar por qué el resultado vacío es correcto
+--es correcto el resultado vacio por que no existen productos con el precio 0 pero si existe la entidad productos con sus atributos de id, nombre y precio.
